@@ -4,6 +4,10 @@
 
 }
 
+body {
+    background-color: rgb(250, 220, 220);
+}
+
 .buttons {
     gap: 5px;
     width: 250px;
