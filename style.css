@@ -27,10 +27,10 @@ body {
     box-shadow: 6px 6px 2px;
 }
 
-.result {
+#result {
     text-align: right;
     margin-bottom: 5px;
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(202, 201, 201);
     width: 250px;
     border: 1px solid black;
     padding: 5px;
@@ -45,7 +45,7 @@ body {
     background-color: rgba(0, 26, 255, 0.815);
 }
 
-#button-reset {
+.button-reset {
     background-color: red;
 }
 

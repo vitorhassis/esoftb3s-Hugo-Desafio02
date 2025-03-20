@@ -1,0 +1,34 @@
+20/03/25
+
+INDEX.HTML (direto ao ponto)
+
+-> <DIV CLASS="calculadora"> </DIV> <-
+-No index.html, a div class "calculadora" possui a presença do input que seria o visor da calculadora e os demais botões que representam os elementos da calculadora (números e os elementos operacionais);
+-Estilizei os botões numéricos com a classe "numbers" e os outros botões que tinham cores diferentes com uma outra classe;
+
+-> ID <-
+-Apenas 2 botões possuem id, porque apenas eles serão capturados pelo get.elementById para a sua presença nas funções no index.js;
+-Botão de reset (C) e o de "resultado" (=);
+-Lembrando que um elemento HTML não pode ter mais de um atributo id, exatamente porque o id deve ser único dentro do documento;
+
+
+INDEX.JS (explicando cada função)
+
+-> FUNCTION inserirElementos (num) <-
+-Essa função é responsável por capturar o valor atual do visor (.value) da calculadora e concatenar com o número ou operador que o user selecionou-
+-linha 06 = o "document.getElementById('result').value" pega o que já está escrito no visor (.value) e armazena em "valorAtual";
+-linha 07 = "document.getElementById('result').value = valorAtual+num" significa que o valor do visor da calculadora será atualizado, para o valor que ele já possuía + novo elemento que o user clicou;
+
+-> FUNCTION LimparVisor () <-
+-Essa função é responsável por pegar todo o campo do visor e atualizar para vazio, ou seja, "limpar" o visor;
+-linha 12 = exatamente oq eu disse aq em cima, só que em código: document.getElementById('result').value = " " ou seja, primeiro ele seleciona o valor do campo do visor da calculadora (input) e atualiza seu valor (.value) para uma string vazia " ", apagando/limpando tudo oq estava escrito antes;
+-linha 15 = aqui nós estamos capturando o elemento que representa o reset/limpar da calculadora (o "C" vermelho) e adicionando um evento a ele. No caso, ao clicar naquele botão, ('click') será chamada a função "LimparVisor";
+
+-> FUNCTION Calculo() <-
+-Essa função é responsável por basicamente, realizar as operações matemáticas na calculadora. Para isso, precisamos pegar toda a expressão matemática que foi inserida no input da calculadora, ou seja, no visor dela, e armazenar numa variável. No caso, se houver a "expressão matemática", ele realiza o cálculo. Caso não tenha, (linha 19) e mesmo assim o user clique em "=" ele exibe um alert para que ele insira números para o cálculo;
+OBS: o eval() é uma função do js que interpreta e executa expressões matemáticas. No caso ele executa então essas operações e exibe no visor;
+
+
+
+
+

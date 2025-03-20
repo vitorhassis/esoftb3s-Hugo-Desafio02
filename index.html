@@ -1,3 +1,6 @@
+<!---EXPLICAÇÃO DETALHADA SOBRE O PROJETO (index.html, index.js) EM "DOCUMENTAÇÃO.TXT" NESSA PASTA! !--->
+<!---EXPLICAÇÃO DETALHADA SOBRE O PROJETO (index.html, index.js) EM "DOCUMENTAÇÃO.TXT" NESSA PASTA! !--->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,32 +13,30 @@
 <body>
 
     <div class="calculadora">
-        <div class="result">
-            0
-        </div>
+        <input type="text" id="result" value="" readonly>
         <div class="buttons">
-            <button class="numbers">7</button>
-            <button class="numbers">8</button>
-            <button class="numbers">9</button>
-            <button class="column-right">*</button>
+            <button class="numbers" onclick="inserirElementos('7')">7</button>
+            <button class="numbers" onclick="inserirElementos('8')">8</button>
+            <button class="numbers" onclick="inserirElementos('9')">9</button>
+            <button class="column-right" onclick="inserirElementos('*')">*</button>
 
-            <button class="numbers">4</button>
-            <button class="numbers">5</button>
-            <button class="numbers">6</button>
-            <button class="column-right">/</button>
+            <button class="numbers" onclick="inserirElementos('4')">4</button>
+            <button class="numbers" onclick="inserirElementos('5')">5</button>
+            <button class="numbers" onclick="inserirElementos('6')">6</button>
+            <button class="column-right" onclick="inserirElementos('/')">/</button>
 
-            <button class="numbers">1</button>
-            <button class="numbers">2</button>
-            <button class="numbers">3</button>
-            <button class="column-right">+</button>
+            <button class="numbers" onclick="inserirElementos('1')">1</button>
+            <button class="numbers" onclick="inserirElementos('2')">2</button>
+            <button class="numbers" onclick="inserirElementos('3')">3</button>
+            <button class="column-right" onclick="inserirElementos('+')">+</button>
 
-            <button id="button-reset">C</button>
-            <button class="numbers">0</button>
-            <button>=</button>
-            <button class="column-right">-</button>
+            <button class="button-reset" id="button-C">C</button> <!---adicionar um evento de clique aqui. Ao clicar, a função limpar visor será dispara-->
+            <button class="numbers" onclick="inserirElementos('0')">0</button>
+            <button id="button-igual" onclick="Calculo()">=</button>
+            <button class="column-right" onclick="inserirElementos('-')">-</button>
         </div>
     </div>
     
-
+<script src="index.js"></script>
 </body>
 </html>
