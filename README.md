@@ -25,7 +25,6 @@
 
 ## 🛠 Melhorias futuras  
 
-🔹 Implementar operações matemáticas mais complexas  
 🔹 Adicionar histórico de cálculos  
 🔹 Permitir temas customizáveis  
 
